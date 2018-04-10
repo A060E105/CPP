@@ -24,5 +24,6 @@ int main()
   cout << "平均: " << average << endl;
   cout << "超過平均有 " << count << "個數" << endl;
 
+  system("pause");
   return 0;
 }
