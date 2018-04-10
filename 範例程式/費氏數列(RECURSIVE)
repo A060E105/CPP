@@ -1,0 +1,81 @@
+============================================================
+/*
+	C程式語言
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int Fib(int);
+
+int main(void)
+{
+	int N;
+    scanf("%d",&N);
+    printf("%d\n",Fib(N));
+
+	system("pause");
+	return 0;
+}
+
+int Fib(int N)
+{
+    if(N==1||N==2){
+        return 1;
+    }else{
+        return Fib(N-1)+Fib(N-2);
+    }
+}
+============================================================
+-----------------------我是分割線----------------------------
+============================================================
+/*
+	C++程式語言
+*/
+#include <iostream>
+using namespace std;
+
+int Fib(int);
+
+int main(void)
+{
+	int N;
+	cin >> N;
+	cout << Fib(N) << endl;
+
+	system("pause");
+	return 0;
+}
+
+int Fib(int N)
+{
+    if(N==1||N==2){
+        return 1;
+    }else{
+        return Fib(N-1)+Fib(N-2);
+    }
+}
+============================================================
+-----------------------我是分割線----------------------------
+============================================================
+/*
+	java程式語言
+*/
+import java.util.Scanner;
+
+public class test{
+	public static void main(String[] args){
+		Scanner sr = new Scanner(System.in);
+		int N = sr.nextInt();
+		System.out.println(Fib(N));
+	}
+
+	public static int Fib(int N){
+		if(N==1||N==2){
+		    return 1;
+		}else{
+		    return Fib(N-1)+Fib(N-2);
+		}
+	}
+}
+
+============================================================

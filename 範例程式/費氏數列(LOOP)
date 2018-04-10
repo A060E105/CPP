@@ -1,0 +1,88 @@
+==================================================
+/*
+	C程式語言
+*/
+#include <stdio.h>
+#include <stdlib.h>
+
+int Fib(int);
+
+int main(void)
+{
+	int N;
+    scanf("%d",&N);
+    printf("%d\n",Fib(N));
+
+	system("pause");
+	return 0;
+}
+
+int Fib(int N)
+{
+    int i,j=1,k=0,tmp=0;
+    for(i=1;i<=N;i++){
+        tmp=j+k;
+        k=j;
+        j=tmp;
+    }
+    return k;
+}
+==================================================
+-------------------我是分割線----------------------
+==================================================
+/*
+	C++程式語言
+*/
+#include <iostream>
+using namespace std;
+
+int Fib(int);
+
+int main(void)
+{
+	int N;
+	cin >> N;
+	cout << Fib(N) << endl;
+
+	system("pause");
+	return 0;
+}
+
+int Fib(int N)
+{
+    int i,j=1,k=0,tmp=0;
+    for(i=1;i<=N;i++){
+        tmp=j+k;
+        k=j;
+        j=tmp;
+    }
+    return k;
+}
+
+==================================================
+-------------------我是分割線----------------------
+==================================================
+/*
+	java程式語言
+*/
+import java.util.Scanner;
+
+public class test{
+	public static void main(String[] args){
+		Scanner sr = new Scanner(System.in);
+		int N = sr.nextInt();
+		System.out.println(Fib(N));
+	}
+
+	public static int Fib(int N){
+		int i,j=1,k=0,tmp=0;
+		for(i=1;i<=N;i++){
+		    tmp=j+k;
+		    k=j;
+		    j=tmp;
+		}
+		return k;
+	}
+}
+
+==================================================
