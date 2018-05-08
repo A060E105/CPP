@@ -1,0 +1,37 @@
+# 簡單的函數
+
+```CPP
+#include <iostream>
+using namespace std;
+
+void hello();
+void old();
+void number();
+
+int main(void)
+{
+    hello();
+    old();
+    number();
+
+    return 0;
+}
+
+void hello()
+{
+    cout << "jin ";
+}
+
+void old()
+{
+    cout << " 現在 20 歲 ";
+}
+
+void number()
+{
+    cout << "學號:A060E105" << endl;
+}
+```
+## 結果:
+
+![](/PIC/CPP_003.png)
