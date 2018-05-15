@@ -30,6 +30,8 @@ private:
 
 #endif
 ```
+---
+
 ##### BMI.cpp
 ```cpp
 #include <iostream>
@@ -94,6 +96,8 @@ string BMI::getStatus() const
 }
 
 ```
+---
+
 ##### main.cpp
 ```cpp
 #include <iostream>
