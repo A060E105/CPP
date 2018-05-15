@@ -1,3 +1,5 @@
+# 物件導向實體範例
+
 ##### BMI.h
 ```CPP
 #ifndef _BMI_H_
