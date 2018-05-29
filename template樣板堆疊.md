@@ -32,27 +32,27 @@ bool Stack<T>::empty() const      //檢查是否為空的函式實作
 }
 
 template<typename T>
-T Stack<T>::peek() const
+T Stack<T>::peek() const        //取出最上層的元素的函式實作
 {
-  return elements[size - 1];
+  return elements[size - 1];    //將size減一，並回傳最上層的元素
 }
 
 template<typename T>
-void Stack<T>::push(T value)
+void Stack<T>::push(T value)    //把資料丟入陣列的函式實作
 {
-  elements[size++] = value;
+  elements[size++] = value;     //將value放入陣列中，並把size加一
 }
 
 template<typename T>
-T Stack<T>::pop()
+T Stack<T>::pop()               //把資料取出的函式
 {
-  return elements[--size];
+  return elements[--size];      //先將size減一，再回傳取出的值
 }
 
 template<typename T>
-int Stack<T>::getSize() const
+int Stack<T>::getSize() const    //取得陣列大小的函式實作
 {
-  return size;
+  return size;              //回傳大小
 }
 
 #endif
