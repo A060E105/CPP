@@ -14,7 +14,7 @@ public:           //公開成員
   T pop();
   int getSize() const;
 
-private:        私有成員
+private:        //私有成員
   T elements[100];
   int size;
 };
