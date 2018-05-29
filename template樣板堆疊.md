@@ -6,15 +6,15 @@
 template<typename T>
 class Stack
 {
-public:
-  Stack();
+public:           //公開成員
+  Stack();        //建構子
   bool empty() const;
   T peek() const;
   void push(T value);
   T pop();
   int getSize() const;
 
-private:
+private:        私有成員
   T elements[100];
   int size;
 };
